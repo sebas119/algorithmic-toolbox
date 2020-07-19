@@ -1,5 +1,4 @@
 # Uses python3
-import sys
 
 def gcd_naive(a, b):
     current_gcd = 1
@@ -10,7 +9,16 @@ def gcd_naive(a, b):
 
     return current_gcd
 
+def gcd_euclidean_algo(a, b):
+    
+    while (b):
+        tmp = a
+        a = b
+        b = tmp % b
+
+    return a
+
 if __name__ == "__main__":
-    input = sys.stdin.read()
-    a, b = map(int, input.split())
-    print(gcd_naive(a, b))
+    a, b = map(int, input().split())
+    # print(gcd_naive(a, b))
+    print(gcd_euclidean_algo(a, b))
