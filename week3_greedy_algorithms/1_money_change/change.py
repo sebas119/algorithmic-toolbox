@@ -2,7 +2,8 @@
 
 
 def get_change(m):
-    #write your code here
+    """Find the minimum number of coins needed to change the input value(an integer)
+    into coins with denominations 1, 5, and 10."""
 
     ans = 0
 
